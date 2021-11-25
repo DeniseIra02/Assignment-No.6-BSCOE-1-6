@@ -66,3 +66,24 @@ def four_Num():
             else:
                 four_Num = num_c, num_d, num_a, num_b
             return four_Num
+
+# fourth number is the largest
+    if num_d > num_a and num_d > num_b and num_d > num_c:
+        if num_a > num_b and num_a > num_c:
+            if num_b > num_c:
+                four_Num = num_d, num_a, num_b, num_c
+            else:
+                four_Num = num_d, num_a, num_c, num_b
+            return four_Num
+        elif num_b > num_a and num_b > num_c:
+            if num_a > num_c:
+                four_Num = num_d, num_b, num_a, num_c
+            else: 
+                four_Num = num_d, num_b, num_c, num_a
+            return four_Num
+        else:
+            if num_a > num_b:
+                four_Num = num_d, num_c, num_a, num_b
+            else:
+                four_Num = num_d, num_c, num_b, num_a
+            return four_Num
