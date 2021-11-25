@@ -87,3 +87,7 @@ def four_Num():
             else:
                 four_Num = num_d, num_c, num_b, num_a
             return four_Num
+
+order_Num = four_Num()
+
+print(f"The descending order is: {order_Num}")
