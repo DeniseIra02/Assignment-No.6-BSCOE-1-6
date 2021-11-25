@@ -45,3 +45,24 @@ def four_Num():
             else:
                 four_Num = num_b, num_d, num_a, num_c
             return four_Num
+
+# third number is the largest
+    if num_c > num_a and num_c > num_b and num_c > num_d:
+        if num_a > num_b and num_a > num_d:
+            if num_b > num_d:
+                four_Num = num_c, num_a, num_b, num_d
+            else:
+                four_Num = num_c, num_a, num_d, num_b
+            return four_Num
+        elif num_b > num_a and num_b > num_d:
+            if num_a > num_d:
+                four_Num = num_c, num_b, num_a, num_d
+            else: 
+                four_Num = num_c, num_b, num_d, num_a
+            return four_Num
+        else:
+            if num_a > num_b:
+                four_Num = num_c, num_d, num_a, num_b
+            else:
+                four_Num = num_c, num_d, num_a, num_b
+            return four_Num
