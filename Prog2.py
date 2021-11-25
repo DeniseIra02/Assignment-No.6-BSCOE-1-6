@@ -29,3 +29,5 @@ for ans in u_quest.keys():
         print("You're CORRECT!")
     else:
         print("Sorry, Your answer is WRONG!")
+
+print('Your score: '+str(k_score)+'/10.')
