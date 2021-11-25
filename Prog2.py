@@ -19,3 +19,13 @@ for adding in range(10):
     your_quest = str(num_a)+' '+str(_operator)+' '+str(num_b)
     answer = eval(your_quest)
     your_quest += ': '
+
+    u_quest.update({your_quest: str(answer)})
+
+for ans in u_quest.keys():
+    your_ans = input(ans)
+    if u_quest.get(ans) == str(your_ans):
+        k_score += 1
+        print("You're CORRECT!")
+    else:
+        print("Sorry, Your answer is WRONG!")
